@@ -1,0 +1,8 @@
+---
+import Base from '../layouts/Base.astro';
+import SitePage from '../components/SitePage.astro';
+import {projects,route,texts,type Lang} from '../lib/content';
+export function getStaticPaths(){const pages=['home','about','projects','cv','contact','legal','privacy'];return (['fr','en'] as Lang[]).flatMap(lang=>[...pages.map(page=>({params:{slug:route(lang,page).slice(1)||undefined},props:{lang,page}})),...projects(lang).map(project=>({params:{slug:route(lang,'projects',project.id).slice(1)},props:{lang,page:'project',project}}))]);}
+const {lang,page,project}=Astro.props as {lang:Lang,page:string,project?:any};const t=texts(lang);const titles:Record<string,string>={home:t.home.title,about:t.about.title,projects:t.projects.title,project:project?.titre,cv:t.cv.title,contact:t.contact.title,legal:t.footer.legal,privacy:t.footer.privacy};
+---
+<Base lang={lang} page={page==='project'?'projects':page} title={titles[page]} projectId={project?.id} description={project?.summary?.slice(0,155)}><SitePage lang={lang} page={page} project={project}/></Base>

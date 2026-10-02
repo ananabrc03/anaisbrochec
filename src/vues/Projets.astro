@@ -1,0 +1,18 @@
+---
+import {texts,projects,type Lang} from '../lib/content';
+import ProjectCard from '../components/ProjectCard.astro';
+const {lang}=Astro.props as {lang:Lang};
+const t=texts(lang),all=projects(lang);
+---
+<section class="section shell">
+<h1>{t.projects.title}<span class="coral">.</span>
+</h1>
+<p class="lead">{t.projects.intro}</p>
+<div class="filters" aria-label={t.projects.filter_label}>
+<button class="chip active" data-project-filter="all" aria-pressed="true">{t.projects.filter_all}</button>{Object.entries(t.projects.domains).map(([id,name])=><button class="chip" data-project-filter={id} aria-pressed="false">{name}</button>)}</div>
+
+<div class="project-grid">{all.map(p=><ProjectCard lang={lang} project={p}/>)}</div>
+
+<p class="empty-projects" hidden>{t.projects.empty}</p>
+</section>
+

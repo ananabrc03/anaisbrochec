@@ -1,0 +1,249 @@
+{
+  "meta": {
+    "site_name": "Anaïs Brochec · Portfolio",
+    "default_description": "Portfolio d'Anaïs Brochec : marketing digital, stratégie et innovation. Projets, compétences prouvées par l'expérience, CV par domaine."
+  },
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "projects": "Projets",
+    "cv": "CV",
+    "contact": "Contact",
+    "lang_label": "Langue",
+    "menu_open": "Ouvrir le menu",
+    "menu_close": "Fermer le menu",
+    "skip": "Aller au contenu"
+  },
+  "footer": {
+    "rights": "© 2026 Anaïs Brochec. Tous droits réservés.",
+    "legal": "Mentions légales",
+    "privacy": "Confidentialité",
+    "tagline": "Marketing digital, stratégie & innovation · Paris / International"
+  },
+  "common": {
+    "copy": "Copier",
+    "copied": "Copié !",
+    "see_project": "Voir le projet",
+    "see_all": "Voir tous les projets",
+    "download_cv": "Télécharger mon CV",
+    "back_projects": "Retour aux projets",
+    "next_project": "Projet suivant",
+    "prev": "Précédent",
+    "next": "Suivant",
+    "close": "Fermer",
+    "open_in_new": "s'ouvre dans un nouvel onglet"
+  },
+  "home": {
+    "eyebrow": "Portfolio",
+    "title": "Anaïs Brochec",
+    "tagline": "Stratégie, marketing digital et innovation : de l'idée à l'exécution.",
+    "intro": "Comprendre un besoin, trouver la bonne idée et la faire avancer : c’est ce qui m’anime. Je conçois, je teste et je réalise, avec autant d’attention pour les détails que pour la vision d’ensemble.",
+    "cta_primary": "Voir mes projets",
+    "cta_secondary": "Me contacter",
+    "bubbles": [
+      "Créative + Analyse",
+      "Stratégie → Exécution",
+      "Paris / International"
+    ],
+    "projects_title": "Projets à la une",
+    "featured_projects": [
+      "afro-buffet",
+      "congo-web-agency",
+      "boc-doc"
+    ],
+    "about_title": "En quelques mots",
+    "about_text": "Entre créativité et analyse, je conçois et j'exécute des stratégies de marketing digital, des lancements de produits et des outils web. Fondatrice d'Afro Buffet, Social Media Lead pour une multinationale américaine en République du Congo depuis 2022 et consultante indépendante.",
+    "skills_title": "J’ai plus d’une corde à mon arc…",
+    "skills_cta": "En découvrir plus",
+    "skills_legend_skill": "Compétence",
+    "skills_legend_quality": "Qualité",
+    "about_cta": "En savoir plus"
+  },
+  "stats": [
+    {
+      "valeur": "4 ans",
+      "libelle": "d'expérience cumulée"
+    },
+    {
+      "valeur": "10+",
+      "libelle": "projets menés"
+    }
+  ],
+  "about": {
+    "title": "À propos",
+    "lead": "Un pied dans la créativité, un pied dans l'analyse.",
+    "bio": [
+      "Je m’appelle Anaïs. Je suis en **Master Management de l’Innovation à l’Université Paris-Dauphine – PSL**, en année de césure, et je dirige ma micro-entreprise de conseil en communication et de création web.",
+      "Avec **4 ans d’expérience cumulée** et **plus de 10 projets menés**, mon terrain de jeu reste le même : faire passer une idée du papier au marché. J'ai lancé Afro Buffet, une marque de jeux de société sur la gastronomie africaine, de la conception à la production de 1 000 jeux. Depuis 2022, je pilote chaque saison la stratégie social media d'une multinationale américaine en République du Congo. Entre les deux, j'ai construit des tableaux de bord financiers, des stratégies de lancement, des applications web et un plan de sortie de crise.",
+      "J'aime comprendre le vrai problème avant d'agir, puis exécuter vite et proprement, en m'appuyant sur l'IA quand elle fait gagner du temps sans sacrifier la qualité. Basée à Paris, je travaille avec la France, l'Afrique et l'international.",
+      "**Je suis ouverte à un stage à partir de janvier 2027** et disponible toute l’année pour des missions de conseil."
+    ],
+    "skills_title": "Compétences & qualités",
+    "skills_intro": "Chaque compétence et chaque qualité est prouvée par un projet. Ouvrez une ligne pour voir où je l'ai mise en œuvre.",
+    "mode_skills": "Compétences",
+    "mode_qualities": "Qualités",
+    "mode_switch_label": "Afficher les compétences ou les qualités",
+    "expand": "Voir les preuves",
+    "collapse": "Masquer",
+    "key_project": "Projet clé",
+    "from_timeline": "Parcours",
+    "timeline_title": "Parcours",
+    "timeline_intro": "Formation, expériences et entrepreneuriat : les étapes clés de mon parcours, de 2022 à aujourd’hui.",
+    "timeline_categories": {
+      "etudes": "Études",
+      "pro": "Expérience professionnelle",
+      "entrepreneuriat": "Entrepreneuriat",
+      "universitaire": "Projet universitaire",
+      "formation": "Programmes & formations",
+      "jalon": "Jalons & distinctions"
+    },
+    "tools_title": "Outils utilisés",
+    "tools_all": "Tous",
+    "languages_title": "Langues",
+    "languages": [
+      {
+        "langue": "Français",
+        "niveau": "Langue maternelle"
+      },
+      {
+        "langue": "Anglais",
+        "niveau": "B2"
+      },
+      {
+        "langue": "Espagnol",
+        "niveau": "A2"
+      }
+    ],
+    "interests_title": "Centres d'intérêt",
+    "interests": [
+      "Arts plastiques (dessin, poterie)",
+      "Voyage",
+      "Cultures africaines",
+      "Escalade",
+      "Gastronomie",
+      "Art de vivre et hôtellerie de luxe"
+    ],
+    "timeline_more": "Voir plus",
+    "timeline_less": "Voir moins"
+  },
+  "projects": {
+    "title": "Projets",
+    "intro": "Entrepreneuriat, missions en entreprise et conseil : chaque projet détaille mon rôle, les missions menées et les résultats obtenus.",
+    "filter_label": "Filtrer par domaine",
+    "filter_all": "Tous",
+    "domains": {
+      "marketing": "Marketing digital & communication",
+      "business": "Business development & stratégie",
+      "produit": "Produit & innovation",
+      "web": "Web & e-commerce",
+      "conseil": "Conseil"
+    },
+    "empty": "Aucun projet dans ce domaine pour le moment."
+  },
+  "project": {
+    "label": "Projet",
+    "role": "Rôle",
+    "period": "Période",
+    "focus": "Focus",
+    "market": "Marché",
+    "skills": "Compétences",
+    "qualities": "Qualités",
+    "missions": "Missions",
+    "results": "Résultats & indicateurs",
+    "context": "Contexte",
+    "my_role": "Mon rôle",
+    "in_this_project": "Dans ce projet",
+    "tools": "Outils",
+    "testimonial": "Témoignage",
+    "visit": "Voir le site",
+    "view_app": "Voir l'application",
+    "before": "Avant",
+    "after": "Après",
+    "confidential": "Certaines informations sont anonymisées pour des raisons de confidentialité."
+  },
+  "cv": {
+    "title": "Télécharger mon CV",
+    "intro": "Choisissez le domaine qui vous intéresse : je vous propose la version de mon CV la plus adaptée.",
+    "choose": "1. Choisissez un domaine",
+    "download_step": "2. Téléchargez",
+    "btn_fr": "CV en français (PDF)",
+    "btn_en": "CV en anglais (PDF)",
+    "domains": [
+      {
+        "id": "marketing",
+        "titre": "Marketing digital & communication",
+        "description": "Social media, influence, contenu, publicité, gestion de crise."
+      },
+      {
+        "id": "business",
+        "titre": "Business development & stratégie",
+        "description": "Go-to-market, distribution, pricing, analyse et pilotage."
+      },
+      {
+        "id": "produit",
+        "titre": "Produit & innovation",
+        "description": "Conception produit, sourcing, production, gestion de projet."
+      },
+      {
+        "id": "web",
+        "titre": "Web & e-commerce",
+        "description": "Shopify, développement web, Supabase, IA appliquée."
+      },
+      {
+        "id": "conseil",
+        "titre": "Conseil",
+        "description": "Diagnostic, recommandation, stratégie de communication."
+      },
+      {
+        "id": "transversal",
+        "titre": "Profil transversal",
+        "description": "Toutes les cordes à mon arc, sur une seule page."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Travaillons ensemble",
+    "intro": "Une offre d'emploi, de stage ou une mission de conseil ? Écrivez-moi, je vous réponds rapidement.",
+    "phone_label": "Téléphone",
+    "email_label": "Email",
+    "location": "Paris, France",
+    "location_sub": "Disponible à l'international, déplacements possibles",
+    "form_title": "Envoyer un message",
+    "f_lastname": "Nom",
+    "f_firstname": "Prénom",
+    "f_email": "Email",
+    "f_company": "Entreprise ou organisation (facultatif)",
+    "f_type": "Objet de votre demande",
+    "f_type_placeholder": "Choisir…",
+    "types": {
+      "emploi": "Offre d'emploi",
+      "stage": "Offre de stage ou d'alternance",
+      "conseil": "Mission de conseil",
+      "web": "Création web",
+      "autre": "Autre"
+    },
+    "f_message": "Votre message",
+    "f_file": "Pièce jointe (PDF, 5 Mo max, facultatif)",
+    "f_consent": "J'accepte que mes données soient utilisées pour répondre à ma demande, conformément à la politique de confidentialité.",
+    "submit": "Envoyer",
+    "sending": "Envoi en cours…",
+    "success": "Merci ! Votre message a bien été envoyé. Je reviens vers vous très vite.",
+    "error": "Oups, l'envoi a échoué. Réessayez ou écrivez-moi directement par email.",
+    "err_required": "Ce champ est obligatoire.",
+    "err_email": "Adresse email invalide.",
+    "err_file_type": "Seuls les fichiers PDF sont acceptés.",
+    "err_file_size": "Le fichier dépasse 5 Mo.",
+    "err_consent": "Merci d'accepter la politique de confidentialité."
+  },
+  "notfound": {
+    "title": "Page introuvable",
+    "text": "Cette page n'existe pas ou a été déplacée.",
+    "cta": "Retour à l'accueil"
+  },
+  "coordonnees": {
+    "telephone": "+33 7 50 65 17 42",
+    "telephone_href": "tel:+33750651742",
+    "email": "anaisbrochec@yahoo.fr",
+    "linkedin": "https://www.linkedin.com/in/ana%C3%AFs-brochec/"
+  }
+}

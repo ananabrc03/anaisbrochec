@@ -1,0 +1,115 @@
+---
+import {texts,projects,route,codeLabel,projectTools,type Lang} from '../lib/content';
+import Media from '../components/Media.astro';
+const {lang,project:p}=Astro.props as {lang:Lang,project:any};
+const t=texts(lang),all=projects(lang);
+---
+
+<section class="section shell project-header">
+<a class="text-link" href={route(lang,'projects')}>← {t.common.back_projects}</a>
+<p class="eyebrow">{t.project.label} {String(p.ordre).padStart(2,'0')} · {t.projects.domains[p.domaines[0] as keyof typeof t.projects.domains]}</p>
+<h1>{p.titre}<span class="coral">.</span>
+</h1>
+<div class="project-overview">
+<p class="lead">{p.summary}</p>
+<dl>{[[t.project.role,p.intitule],[t.project.period,p.periode.affichage],[t.project.focus,p.focus],[t.project.market,p.marche]].map(([key,value])=><div>
+<dt>{key}</dt>
+<dd>{value}</dd>
+</div>
+)}</dl>
+</div>
+
+<div class="actions">{p.liens?.map((l:any)=><a class="button secondary" href={l.url} target="_blank" rel="noopener noreferrer">{l.libelle} ↗</a>)}</div>
+
+<div class="project-tags">
+<p>{t.project.skills}</p>
+<div class="tool-pills">{[...(p.familles_cles||[]),...(p.familles_secondaires||[])].map((c:string)=><a class="chip" href={route(lang,'about')+'#'+c}>{codeLabel(c,lang)}</a>)}</div>
+
+<p>{t.project.qualities}</p>
+<div class="tool-pills">{p.qualites_cles?.map((c:string)=><a class="chip quality" href={route(lang,'about')+'#'+c}>{codeLabel(c,lang)}</a>)}</div>
+
+<p>{t.project.tools}</p>
+<div class="tool-pills">{projectTools(p).map(tool=><a class="chip tool-chip" href={route(lang,'about')+'#outil-'+tool.id}>
+<img src={tool.icone} alt="" width="16" height="16" loading="lazy"/>{tool.nom}</a>)}</div>
+
+</div>
+
+<h2 id="resultats">{t.project.results}</h2>
+<div class="kpi-grid">{p.resultats_cles.map((v:string)=>{const row=p.results.find((r:string[])=>r[0].replace(/\*\*/g,'')===v)||[v,'',''];return <div class="kpi">
+<strong>{v}</strong>
+<h3 set:html={row[1]?.replace(/\*\*/g,'')}/>
+<p set:html={row[2]?.replace(/\*\*/g,'')}/>
+</div>
+;})}</div>
+
+<details class="all-results">
+<summary>{t.project.results} ↓</summary>
+<div class="table-scroll">
+<table>
+<tbody>{p.results.map((r:string[])=><tr>{r.map(v=><td>{v.replace(/\*\*/g,'')}</td>)}</tr>)}</tbody>
+</table>
+</div>
+
+</details>
+
+</section>
+
+<div class="shell project-body">
+<aside class="project-sidebar">
+<p class="eyebrow">{t.project.in_this_project}</p>
+<a href="#contexte">{t.project.context}</a>
+<a href="#role">{t.project.my_role}</a>{p.missions.map((m:any)=><a href={'#mission-'+m.number}>{String(m.number).padStart(2,'0')} · {m.title}</a>)}<a href="#resultats">{t.project.results}</a>
+</aside>
+<div>
+<details class="context-toggle" id="contexte">
+<summary>
+<h2>{t.project.context}</h2>
+<span class="mission-arrow" aria-hidden="true">↘</span>
+</summary>
+<div class="context-content">
+<Media blocks={p.context} lang={lang}/>{p.jalons&&<div class="milestones">{p.jalons.map((j:any)=><p>
+<strong>{j.date}</strong> {j.libelle}</p>)}</div>
+}</div>
+
+</details>
+
+<section id="role">
+<h2>{t.project.my_role}</h2>
+<Media blocks={p.role} lang={lang}/>
+</section>
+
+<section id="missions">
+<h2>{t.project.missions}</h2>{p.missions.map((m:any)=><details class="mission" id={'mission-'+m.number} open={m.open}>
+<summary>
+<span class="mission-number">{String(m.number).padStart(2,'0')}</span>
+<h3>{m.title}</h3>
+<span class="mission-arrow" aria-hidden="true">↘</span>
+</summary>
+<div class="mission-content">
+<div class="tool-pills">{[...new Set(m.codes)].map((c:any)=><a class:list={['chip',{'quality':c.startsWith('Q-')}]} href={route(lang,'about')+'#'+c}>{codeLabel(c,lang)}</a>)}</div>
+
+<Media blocks={m.blocks} lang={lang}/>
+</div>
+
+</details>
+)}</section>
+{p.temoignage&&<blockquote>
+<p>« {p.temoignage.citation} »</p>
+<cite>{p.temoignage.auteur} · {p.temoignage.fonction}</cite>
+</blockquote>}{p.confidentialite&&<p class="confidential-note">{t.project.confidential}</p>}</div>
+
+</div>
+
+<section class="shell section next-project">
+<p class="eyebrow">{t.common.next_project}</p>
+<a href={route(lang,'projects',all[p.ordre%all.length].id)}>{all[p.ordre%all.length].titre} ↗</a>
+</section>
+
+<dialog class="lightbox" aria-label={lang==='fr'?'Galerie du projet':'Project gallery'}>
+<button class="lightbox-close" aria-label={t.common.close}>×</button>
+<button class="lightbox-prev" aria-label={t.common.prev}>←</button>
+<img alt=""/>
+<button class="lightbox-next" aria-label={t.common.next}>→</button>
+<p/>
+</dialog>
+

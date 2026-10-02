@@ -1,0 +1,296 @@
+{
+  "categories": [
+    {
+      "id": "etudes",
+      "couleur": "#215B5A"
+    },
+    {
+      "id": "pro",
+      "couleur": "#702D42"
+    },
+    {
+      "id": "entrepreneuriat",
+      "couleur": "#D96C61"
+    },
+    {
+      "id": "formation",
+      "couleur": "#9C5B6E"
+    },
+    {
+      "id": "jalon",
+      "couleur": "#451725"
+    }
+  ],
+  "entrees": [
+    {
+      "id": "formation-cm-2022",
+      "debut": "2022-01",
+      "fin": "2022-05",
+      "categorie": "formation",
+      "titre": {
+        "fr": "Formation Community Manager",
+        "en": "Community Management training"
+      },
+      "description": {
+        "fr": "Stage chez Morgane Puche + formation autodidacte en ligne (Udemy et Google).",
+        "en": "Internship with Morgane Puche + self-directed online training (Udemy and Google)."
+      },
+      "badges": [],
+      "fiche": null
+    },
+    {
+      "id": "nespresso-2022",
+      "debut": "2022-05",
+      "fin": "2022-07",
+      "categorie": "pro",
+      "titre": {
+        "fr": "Animatrice de vente · Nespresso",
+        "en": "Sales demonstrator · Nespresso"
+      },
+      "description": {
+        "fr": "Animation et vente en magasin Darty (Montpellier) avec l'agence Impact.",
+        "en": "In-store promotion and sales at Darty (Montpellier) with the Impact agency."
+      },
+      "badges": [],
+      "fiche": null
+    },
+    {
+      "id": "cwa-2022",
+      "debut": "2022-06",
+      "fin": "2022-09",
+      "categorie": "pro",
+      "titre": {
+        "fr": "Community Manager · Congo Web Agency",
+        "en": "Community Manager · Congo Web Agency"
+      },
+      "description": {
+        "fr": "Première saison avec l'agence.",
+        "en": "First season with the agency."
+      },
+      "badges": [
+        "CDD",
+        "International"
+      ],
+      "fiche": "congo-web-agency"
+    },
+    {
+      "id": "glow-2023",
+      "debut": "2023-05",
+      "fin": "2023-07",
+      "categorie": "formation",
+      "titre": {
+        "fr": "GLOW · Global Cohort 2023 (WeNation)",
+        "en": "GLOW · Global Cohort 2023 (WeNation)"
+      },
+      "description": {
+        "fr": "Programme international de leadership : 50 participantes sur 1 500 candidatures, 8 pays. Événement bien-être à Paris.",
+        "en": "International leadership programme: 50 participants out of 1,500 applicants, 8 countries. Wellness event in Paris."
+      },
+      "badges": [
+        "International",
+        "Leadership",
+        "EN"
+      ],
+      "fiche": null
+    },
+    {
+      "id": "cwa-2023",
+      "debut": "2023-06",
+      "fin": "2023-09",
+      "categorie": "pro",
+      "titre": {
+        "fr": "Social Media Manager · Congo Web Agency",
+        "en": "Social Media Manager · Congo Web Agency"
+      },
+      "description": {
+        "fr": "Stratégie en plus de l'opérationnel.",
+        "en": "Strategy on top of execution."
+      },
+      "badges": [
+        "CDD",
+        "International"
+      ],
+      "fiche": "congo-web-agency"
+    },
+    {
+      "id": "boc-doc-2024",
+      "debut": "2024-04",
+      "fin": "2024-06",
+      "categorie": "pro",
+      "titre": {
+        "fr": "Analyste stratégie & performance · Boc d'Oc",
+        "en": "Strategy & performance analyst · Boc d'Oc"
+      },
+      "description": {
+        "fr": "Tableau de bord financier toujours utilisé par la direction.",
+        "en": "A financial dashboard still used by management."
+      },
+      "badges": [
+        "Stage"
+      ],
+      "fiche": "boc-doc"
+    },
+    {
+      "id": "lissolo-2024",
+      "debut": "2024-05",
+      "fin": "2025-12",
+      "categorie": "entrepreneuriat",
+      "titre": {
+        "fr": "Lissolo Games",
+        "en": "Lissolo Games"
+      },
+      "description": {
+        "fr": "Associée · développement commercial & opérations.",
+        "en": "Partner · business development & operations."
+      },
+      "badges": [],
+      "fiche": "lissolo-games"
+    },
+    {
+      "id": "cwa-2024",
+      "debut": "2024-06",
+      "fin": "2024-09",
+      "categorie": "pro",
+      "titre": {
+        "fr": "Social Media Lead · Congo Web Agency",
+        "en": "Social Media Lead · Congo Web Agency"
+      },
+      "description": {
+        "fr": "Responsable de tout le volet social media.",
+        "en": "In charge of the entire social media side."
+      },
+      "badges": [
+        "CDD",
+        "International"
+      ],
+      "fiche": "congo-web-agency"
+    },
+    {
+      "id": "erasmus-2025",
+      "debut": "2025-01",
+      "fin": "2025-06",
+      "categorie": "etudes",
+      "titre": {
+        "fr": "Erasmus · Södertörn University (Suède)",
+        "en": "Erasmus · Södertörn University (Sweden)"
+      },
+      "description": {
+        "fr": "",
+        "en": ""
+      },
+      "badges": [
+        "International",
+        "EN"
+      ],
+      "fiche": null
+    },
+    {
+      "id": "cwa-2025",
+      "debut": "2025-04",
+      "fin": "2025-09",
+      "categorie": "pro",
+      "titre": {
+        "fr": "Social Media Lead · Congo Web Agency",
+        "en": "Social Media Lead · Congo Web Agency"
+      },
+      "description": {
+        "fr": "Avril à mai, puis juillet à septembre : portée Facebook plus que doublée au printemps.",
+        "en": "April to May, then July to September: Facebook reach more than doubled in spring."
+      },
+      "badges": [
+        "CDD",
+        "International"
+      ],
+      "fiche": "congo-web-agency"
+    },
+    {
+      "id": "licence-2025",
+      "debut": "2025-06",
+      "fin": "2025-06",
+      "categorie": "jalon",
+      "titre": {
+        "fr": "Licence de Gestion validée",
+        "en": "Bachelor’s degree in Management completed"
+      },
+      "description": {
+        "fr": "Mention Bien.",
+        "en": "With honours."
+      },
+      "badges": [
+        "Diplôme"
+      ],
+      "fiche": null
+    },
+    {
+      "id": "afro-buffet-2025",
+      "debut": "2025-11",
+      "fin": null,
+      "categorie": "entrepreneuriat",
+      "titre": {
+        "fr": "Afro Buffet",
+        "en": "Afro Buffet"
+      },
+      "description": {
+        "fr": "Fondatrice d'une marque de jeux de société sur la gastronomie africaine.",
+        "en": "Founder of a board game brand about African cuisine."
+      },
+      "badges": [],
+      "fiche": "afro-buffet"
+    },
+    {
+      "id": "m1-valide-2026",
+      "debut": "2026-04",
+      "fin": "2026-04",
+      "categorie": "jalon",
+      "titre": {
+        "fr": "Master 1 Management de l’Innovation validé",
+        "en": "Master’s year 1 in Innovation Management completed"
+      },
+      "description": {
+        "fr": "Université Paris-Dauphine – PSL.",
+        "en": "Université Paris-Dauphine – PSL."
+      },
+      "badges": [],
+      "fiche": null
+    },
+    {
+      "id": "cwa-2026",
+      "debut": "2026-06",
+      "fin": "2026-09",
+      "categorie": "pro",
+      "titre": {
+        "fr": "Social Media Lead · Congo Web Agency",
+        "en": "Social Media Lead · Congo Web Agency"
+      },
+      "description": {
+        "fr": "Cinquième saison, lancement de la communauté WhatsApp.",
+        "en": "Fifth season, launch of the WhatsApp community."
+      },
+      "badges": [
+        "CDD",
+        "International"
+      ],
+      "fiche": "congo-web-agency"
+    },
+    {
+      "id": "consultante-2026",
+      "debut": "2026-08",
+      "fin": null,
+      "categorie": "pro",
+      "titre": {
+        "fr": "Consultante indépendante",
+        "en": "Independent consultant"
+      },
+      "description": {
+        "fr": "Gestion de crise, Faith Hair, Sika Beauty.",
+        "en": "Crisis management, Faith Hair, Sika Beauty."
+      },
+      "badges": [],
+      "fiche": [
+        "gestion-de-crise",
+        "faith-hair",
+        "sika-beauty"
+      ]
+    }
+  ]
+}
