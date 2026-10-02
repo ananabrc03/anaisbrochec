@@ -1,0 +1,60 @@
+---
+import {texts,projects,route,timeline,tools,type Lang} from '../lib/content';
+import Skills from '../components/Skills.astro';
+const {lang}=Astro.props as {lang:Lang};
+const t=texts(lang),all=projects(lang);
+---
+
+<section class="section shell about-intro">
+<div>
+<p class="eyebrow">{t.about.title}</p>
+<h1>{t.about.lead}<span class="coral">.</span>
+</h1>{t.about.bio.map(b=><p>{b.split('**').map((part,i)=>i%2===1?<strong>{part}</strong>:part)}</p>)}
+
+<a class="button primary" href={route(lang,'cv')}>{t.common.download_cv}<span>↓</span>
+</a>
+</div>
+
+<picture>
+<source type="image/avif" srcset="/media/photos/anais-portrait-a-propos-480.avif 480w, /media/photos/anais-portrait-a-propos-800.avif 800w" sizes="(max-width:640px) 70vw, 400px"/>
+<img src="/media/photos/anais-portrait-a-propos-800.webp" width="600" height="800" alt="Anaïs Brochec" class="about-photo"/>
+</picture>
+</section>
+
+<Skills lang={lang}/>
+<section class="section shell" id="parcours">
+<h2>{t.about.timeline_title}</h2>
+<p class="lead">{t.about.timeline_intro}</p>
+<div class="filters">
+<button class="chip active" data-timeline-filter="all" aria-pressed="true">{t.about.tools_all}</button>{timeline.categories.map((c:any)=><button class="chip" data-timeline-filter={c.id} style={`--category:${c.couleur}`} aria-pressed="false">
+<i style={`background:${c.couleur}`}/>{t.about.timeline_categories[c.id as keyof typeof t.about.timeline_categories]}</button>)}</div>
+
+<div class="timeline" id="timeline-entries">{timeline.entrees.map((e:any,i:number)=><article class="timeline-entry" data-timeline-index={i} data-category={e.categorie} style={`--category:${timeline.categories.find(c=>c.id===e.categorie)?.couleur||'#702D42'}`}>
+<span class="timeline-year">{e.debut.slice(0,4)}</span>
+<div class="timeline-card">
+<p class="eyebrow">{e.debut} {e.fin?'→ '+e.fin:''}</p>
+<h3>{e.titre[lang]}</h3>
+<p>{e.description[lang]}</p>
+<div class="tool-pills">{e.badges?.map((b:any)=><span class="chip">{typeof b==='string'?b:b[lang]}</span>)}</div>
+{(Array.isArray(e.fiche)?e.fiche:e.fiche?[e.fiche]:[]).map((id:string)=><a href={route(lang,'projects',id)}>{all.find(p=>p.id===id)?.titre||t.common.see_project} ↗</a>)}</div>
+
+</article>
+)}</div>
+
+<button class="button primary timeline-toggle" aria-controls="timeline-entries" aria-expanded="false" data-more={t.about.timeline_more} data-less={t.about.timeline_less} hidden>{t.about.timeline_more}</button>
+</section>
+
+<section class="section shell" id="outils">
+<h2>{t.about.tools_title}</h2>
+<div class="filters">
+{tools.categories.map(c=><button class:list={['chip',{active:c.id==='ia'}]} data-tool-filter={c.id} aria-pressed={c.id==='ia'?'true':'false'}>{c[lang]}</button>)}</div>
+
+<div class="tools-grid">{tools.outils.map(tool=><div class="tool" id={'outil-'+tool.id} data-tool-category={tool.categorie} hidden={tool.categorie!=='ia'} title={tool.projets.map(id=>all.find(p=>p.id===id)?.titre||id).join(', ')}>
+<span class="tool-icons" aria-hidden="true">{(tool.icones||[tool.icone]).map(src=><img src={src} alt="" width="40" height="40" loading="lazy"/>)}</span>
+<p>{tool.nom}</p>{tool.projets.length>0&&<div class="tool-projects">{tool.projets.map(id=><a href={route(lang,'projects',id)}>{all.find(p=>p.id===id)?.titre} ↗</a>)}</div>
+}</div>
+)}</div>
+
+</section>
+
+

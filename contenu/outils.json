@@ -1,0 +1,304 @@
+{
+  "categories": [
+    {
+      "id": "ia",
+      "fr": "IA",
+      "en": "AI"
+    },
+    {
+      "id": "design",
+      "fr": "Design",
+      "en": "Design"
+    },
+    {
+      "id": "video",
+      "fr": "Vidéo",
+      "en": "Video"
+    },
+    {
+      "id": "web",
+      "fr": "Web & e-commerce",
+      "en": "Web & e-commerce"
+    },
+    {
+      "id": "marketing",
+      "fr": "Marketing & réseaux",
+      "en": "Marketing & social"
+    },
+    {
+      "id": "bureautique",
+      "fr": "Bureautique & productivité",
+      "en": "Office & productivity"
+    }
+  ],
+  "outils": [
+    {
+      "nom": "ChatGPT · DALL·E",
+      "categorie": "ia",
+      "projets": [
+        "lissolo-games"
+      ],
+      "id": "chatgpt",
+      "icone": "/images/outils/chatgpt.svg"
+    },
+    {
+      "nom": "Claude",
+      "categorie": "ia",
+      "projets": [],
+      "id": "claude",
+      "icone": "/images/outils/claude.svg"
+    },
+    {
+      "nom": "Claude Code",
+      "categorie": "ia",
+      "projets": [
+        "afro-buffet",
+        "faith-hair"
+      ],
+      "id": "claude-code",
+      "icone": "/images/outils/claude-code.svg"
+    },
+    {
+      "nom": "Perplexity",
+      "categorie": "ia",
+      "projets": [],
+      "id": "perplexity",
+      "icone": "/images/outils/perplexity.svg"
+    },
+    {
+      "nom": "Gemini",
+      "categorie": "ia",
+      "projets": [],
+      "id": "gemini",
+      "icone": "/images/outils/gemini.svg"
+    },
+    {
+      "nom": "Copilot",
+      "categorie": "ia",
+      "projets": [],
+      "id": "copilot",
+      "icone": "/images/outils/copilot.svg"
+    },
+    {
+      "nom": "Higgsfield",
+      "categorie": "ia",
+      "projets": [
+        "afro-buffet"
+      ],
+      "id": "higgsfield",
+      "icone": "/images/outils/higgsfield.svg"
+    },
+    {
+      "nom": "Canva",
+      "categorie": "design",
+      "projets": [
+        "afro-buffet"
+      ],
+      "id": "canva",
+      "icone": "/images/outils/canva.svg"
+    },
+    {
+      "nom": "Adobe Illustrator",
+      "categorie": "design",
+      "projets": [
+        "afro-buffet"
+      ],
+      "id": "adobe-illustrator",
+      "icone": "/images/outils/adobe-illustrator.svg"
+    },
+    {
+      "nom": "Miro",
+      "categorie": "design",
+      "projets": [],
+      "id": "miro",
+      "icone": "/images/outils/miro.svg"
+    },
+    {
+      "nom": "DaVinci Resolve",
+      "categorie": "video",
+      "projets": [
+        "afro-buffet"
+      ],
+      "id": "davinci-resolve",
+      "icone": "/images/outils/davinci-resolve.svg"
+    },
+    {
+      "nom": "CapCut",
+      "categorie": "video",
+      "projets": [],
+      "id": "capcut",
+      "icone": "/images/outils/capcut.svg"
+    },
+    {
+      "nom": "Descript",
+      "categorie": "video",
+      "projets": [
+        "afro-buffet"
+      ],
+      "id": "descript",
+      "icone": "/images/outils/descript.svg"
+    },
+    {
+      "nom": "ChatCut",
+      "categorie": "video",
+      "projets": [
+        "afro-buffet"
+      ],
+      "id": "chatcut",
+      "icone": "/images/outils/chatcut.svg"
+    },
+    {
+      "nom": "Shopify",
+      "categorie": "web",
+      "projets": [
+        "afro-buffet"
+      ],
+      "id": "shopify",
+      "icone": "/images/outils/shopify.svg"
+    },
+    {
+      "nom": "HTML / CSS / JavaScript",
+      "categorie": "web",
+      "projets": [
+        "afro-buffet",
+        "faith-hair"
+      ],
+      "id": "html5",
+      "icone": "/images/outils/html5.svg",
+      "icones": [
+        "/images/outils/html5.svg",
+        "/images/outils/css3.svg",
+        "/images/outils/javascript.svg"
+      ]
+    },
+    {
+      "nom": "Supabase",
+      "categorie": "web",
+      "projets": [
+        "faith-hair"
+      ],
+      "id": "supabase",
+      "icone": "/images/outils/supabase.svg"
+    },
+    {
+      "nom": "Vercel",
+      "categorie": "web",
+      "projets": [
+        "afro-buffet",
+        "faith-hair"
+      ],
+      "id": "vercel",
+      "icone": "/images/outils/vercel.svg"
+    },
+    {
+      "nom": "GitHub",
+      "categorie": "web",
+      "projets": [
+        "faith-hair"
+      ],
+      "id": "github",
+      "icone": "/images/outils/github.svg"
+    },
+    {
+      "nom": "Hostinger",
+      "categorie": "web",
+      "projets": [
+        "lissolo-games"
+      ],
+      "id": "hostinger",
+      "icone": "/images/outils/hostinger.svg"
+    },
+    {
+      "nom": "TikTok Shop",
+      "categorie": "web",
+      "projets": [
+        "afro-buffet"
+      ],
+      "id": "tiktok-shop",
+      "icone": "/images/outils/tiktok.svg"
+    },
+    {
+      "nom": "Meta Business Suite",
+      "categorie": "marketing",
+      "projets": [
+        "congo-web-agency"
+      ],
+      "id": "meta-business-suite",
+      "icone": "/images/outils/meta-business-suite.svg"
+    },
+    {
+      "nom": "Facebook",
+      "categorie": "marketing",
+      "projets": [
+        "congo-web-agency"
+      ],
+      "id": "facebook",
+      "icone": "/images/outils/facebook.svg"
+    },
+    {
+      "nom": "Instagram",
+      "categorie": "marketing",
+      "projets": [
+        "congo-web-agency"
+      ],
+      "id": "instagram",
+      "icone": "/images/outils/instagram.svg"
+    },
+    {
+      "nom": "TikTok",
+      "categorie": "marketing",
+      "projets": [
+        "congo-web-agency",
+        "afro-buffet"
+      ],
+      "id": "tiktok",
+      "icone": "/images/outils/tiktok.svg"
+    },
+    {
+      "nom": "WhatsApp",
+      "categorie": "marketing",
+      "projets": [
+        "congo-web-agency"
+      ],
+      "id": "whatsapp",
+      "icone": "/images/outils/whatsapp.svg"
+    },
+    {
+      "nom": "Excel",
+      "categorie": "bureautique",
+      "projets": [
+        "boc-doc"
+      ],
+      "id": "excel",
+      "icone": "/images/outils/excel.svg"
+    },
+    {
+      "nom": "Word",
+      "categorie": "bureautique",
+      "projets": [],
+      "id": "word",
+      "icone": "/images/outils/word.svg"
+    },
+    {
+      "nom": "PowerPoint",
+      "categorie": "bureautique",
+      "projets": [],
+      "id": "powerpoint",
+      "icone": "/images/outils/powerpoint.svg"
+    },
+    {
+      "nom": "Google Workspace",
+      "categorie": "bureautique",
+      "projets": [],
+      "id": "google-workspace",
+      "icone": "/images/outils/google-workspace.svg"
+    },
+    {
+      "nom": "Notion",
+      "categorie": "bureautique",
+      "projets": [],
+      "id": "notion",
+      "icone": "/images/outils/notion.svg"
+    }
+  ]
+}
