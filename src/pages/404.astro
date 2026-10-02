@@ -1,5 +1,0 @@
----
-import Base from '../layouts/Base.astro';
-import {texts} from '../lib/content';
----
-<Base lang="fr" page="home" title="404" noindex={true}><section class="section shell notfound"><p class="number">404</p><h1 data-404-title>{texts('fr').notfound.title}</h1><p data-404-text>{texts('fr').notfound.text}</p><a class="button primary" href="/" data-404-link>{texts('fr').notfound.cta}<span>↗</span></a></section></Base><script>import {texts} from '../lib/i18n-client';if(location.pathname.startsWith('/en')){const t=texts('en');document.documentElement.lang='en';document.querySelector('[data-404-title]')!.textContent=t.notfound.title;document.querySelector('[data-404-text]')!.textContent=t.notfound.text;const a=document.querySelector<HTMLAnchorElement>('[data-404-link]')!;a.href='/en';a.textContent=t.notfound.cta;}</script>

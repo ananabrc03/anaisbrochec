@@ -1,5 +1,0 @@
----
-import {legal,type Lang} from '../lib/content';
-const {lang,page}=Astro.props as {lang:Lang,page:string};
----
-<section class="section shell legal prose" set:html={legal(lang,page==='privacy')}/>
